@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Gupta | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    #bg-canvas { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; opacity:0.4; }
+    .glass { background: rgba(15, 23, 42, 0.8); backdrop-blur: 12px; border: 1px solid rgba(51, 65, 85, 0.5); }
+    .skill-card:hover { border-color: #22d3ee; transform: translateY(-5px); }
+  </style>
+</head>
+<body class="bg-slate-950 text-gray-100">
+
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="fixed w-full bg-slate-950/80 backdrop-blur-sm z-50 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-cyan-400">YG<span class="text-white">.stack</span></h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-24 relative z-10">
+    <section id="hero" class="h-screen flex flex-col items-center justify-center text-center px-4">
+      <div class="relative mb-6">
+        <img src="images/Picsart_25-05-01_22-50-06-659 1.jpg" class="rounded-full border-4 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.5)] object-cover h-48 w-48" alt="Yash Gupta">
+      </div>
+      <h2 class="text-5xl font-extrabold mb-2">Yash Gupta</h2>
+      <p class="text-xl text-cyan-400 font-semibold mb-4">Frontend Developer & UI/UX Designer</p>
+      <p class="text-lg text-gray-400 max-w-2xl">Building intuitive, data-driven web experiences with a focus on clean code and user-centered design[cite: 59].</p>
+      <div class="mt-8 space-x-4">
+        <a href="#projects" class="px-8 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-full font-semibold transition shadow-lg">View My Work</a>
+        <a href="mailto:gyash7068@gmail.com" class="px-8 py-3 border border-cyan-600 hover:bg-cyan-600 hover:text-white rounded-full font-semibold transition">Let's Talk</a>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-5xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">About Me</h3>
+      <div class="glass p-8 rounded-2xl text-center">
+        <p class="text-gray-300 leading-relaxed text-lg">
+          Highly motivated second-year B.Tech Computer Science student at <strong>VIT Bhopal University</strong> with a current CGPA of <strong>8.67/10.0</strong>[cite: 57, 63]. I am passionate about User Interface and User Experience design, combining technical skills in <strong>React.js</strong> and <strong>Cloud Architecture</strong> to build seamless digital products[cite: 58, 68].
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-slate-900/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-12 text-white">Technical Expertise</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div class="space-y-4">
+            <h4 class="text-cyan-400 font-semibold flex items-center"><span class="w-8 h-px bg-cyan-400 mr-3"></span> Web Development</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="glass p-4 rounded-xl text-center skill-card transition border border-slate-800">
+                <img src="https://img.icons8.com/color/48/html-5.png" class="mx-auto mb-2" alt="HTML"/>
+                <p class="text-sm font-medium">HTML5 / CSS3</p>
+              </div>
+              <div class="glass p-4 rounded-xl text-center skill-card transition border border-slate-800">
+                <img src="https://img.icons8.com/color/48/javascript.png" class="mx-auto mb-2" alt="JS"/>
+                <p class="text-sm font-medium">JavaScript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="text-cyan-400 font-semibold flex items-center"><span class="w-8 h-px bg-cyan-400 mr-3"></span> Programming & Logic</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="glass p-4 rounded-xl text-center skill-card transition border border-slate-800">
+                <img src="https://img.icons8.com/color/48/c-plus-plus.png" class="mx-auto mb-2" alt="C++"/>
+                <p class="text-sm font-medium">C++ (OOPs)</p>
+              </div>
+              <div class="glass p-4 rounded-xl text-center skill-card transition border border-slate-800">
+                <img src="https://img.icons8.com/color/48/python.png" class="mx-auto mb-2" alt="Python"/>
+                <p class="text-sm font-medium">Python </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="text-cyan-400 font-semibold flex items-center"><span class="w-8 h-px bg-cyan-400 mr-3"></span> Tools & Cloud</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="glass p-4 rounded-xl text-center skill-card transition border border-slate-800">
+                <img src="https://img.icons8.com/color/48/github.png" class="mx-auto mb-2" alt="GitHub"/>
+                <p class="text-sm font-medium">GitHub / Git</p>
+              </div>
+              <div class="glass p-4 rounded-xl text-center skill-card transition border border-slate-800">
+                <img src="https://img.icons8.com/color/48/amazon-web-services.png" class="mx-auto mb-2" alt="AWS"/>
+                <p class="text-sm font-medium">AWS / Cloud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">Featured Projects</h3>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div class="glass rounded-xl overflow-hidden group">
+          <img src="images/EV.png" alt="Volti EV" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2 text-cyan-400">Volti – Eco EV Startup</h4>
+            <p class="text-sm text-gray-400 mb-4">Responsive landing page for an EV startup featuring performance metrics: 80 km/h top speed and 116 km range.</p>
+          </div>
+        </div>
+
+        <div class="glass rounded-xl overflow-hidden group">
+          <img src="images/Screenshot 2025-12-17 152349.png" alt="Foodie" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2 text-cyan-400">Foodie – Full Service Platform</h4>
+            <p class="text-sm text-gray-400 mb-4">A comprehensive food platform with high-quality visual menus, category filtering, and a seamless reservation system.</p>
+          </div>
+        </div>
+
+        <div class="glass rounded-xl overflow-hidden group">
+          <img src="images/covid-19.png" alt="COVID Tracker" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2 text-cyan-400">COVID-19 Live Tracker</h4>
+            <p class="text-sm text-gray-400 mb-4">Live portal tracking 960k+ global cases with interactive data cards and virus visualizations.</p>
+          </div>
+        </div>
+
+        <div class="glass rounded-xl overflow-hidden group">
+          <img src="images/grill.png" alt="Grilli" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2 text-cyan-400">Grilli – Premium Dining</h4>
+            <p class="text-sm text-gray-400 mb-4">Sophisticated dark-themed interface with floating components and sticky navigation for luxury dining.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-900/50">
+      <div class="max-w-5xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-10">Experience & Certifications</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <h4 class="text-xl font-bold text-white border-b border-cyan-400 pb-2 inline-block">Job Simulations</h4>
+            <div class="glass p-6 rounded-xl">
+              <h5 class="font-bold text-cyan-400">Data Analytics – Deloitte</h5>
+              <p class="text-xs text-gray-400 mb-2">Dec 2025</p>
+              <p class="text-sm text-gray-300">Performed forensic technology tasks and complex data analysis via Forage.</p>
+            </div>
+            <div class="glass p-6 rounded-xl">
+              <h5 class="font-bold text-cyan-400">Solutions Architecture – AWS</h5>
+              <p class="text-xs text-gray-400 mb-2">Dec 2025</p>
+              <p class="text-sm text-gray-300">Designed scalable hosting architectures as part of an AWS professional simulation[cite: 21, 25].</p>
+            </div>
+          </div>
+          
+          <div class="space-y-6">
+            <h4 class="text-xl font-bold text-white border-b border-cyan-400 pb-2 inline-block">Professional Certs</h4>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li class="flex items-start"><span class="text-cyan-400 mr-2">▹</span> Machine Learning with Python – IBM</li>
+              <li class="flex items-start"><span class="text-cyan-400 mr-2">▹</span> Introduction to Generative AI – Google Cloud [cite: 38]</li>
+              <li class="flex items-start"><span class="text-cyan-400 mr-2">▹</span> Prompt Engineering with Copilot – Microsoft [cite: 48]</li>
+              <li class="flex items-start"><span class="text-cyan-400 mr-2">▹</span> Cloud Computing – NPTEL [cite: 96]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">Get In Touch</h3>
+      <div class="glass p-10 rounded-3xl text-center border border-cyan-500/20">
+        <p class="mb-8 text-gray-300 text-lg">Seeking UI/UX Design or Frontend internships. Let's collaborate!</p>
+        <div class="flex justify-center flex-wrap gap-6">
+          <a href="mailto:gyash7068@gmail.com" class="text-cyan-400 hover:text-white transition font-semibold">Email Me</a>
+          <a href="https://linkedin.com" target="_blank" class="text-cyan-400 hover:text-white transition font-semibold">LinkedIn</a>
+          <a href="https://github.com/yashstack-bot" target="_blank" class="text-cyan-400 hover:text-white transition font-semibold">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 text-center text-gray-500 border-t border-slate-800">
+    <p>© 2025 Yash Gupta. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    window.onload = () => {
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas'), alpha:true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+
+      const stars = [];
+      for(let i=0;i<350;i++){
+        const geo = new THREE.SphereGeometry(0.12, 8, 8);
+        const mat = new THREE.MeshBasicMaterial({ color: 0x22d3ee });
+        const star = new THREE.Mesh(geo, mat);
+        star.position.x = (Math.random()-0.5)*200;
+        star.position.y = (Math.random()-0.5)*200;
+        star.position.z = -Math.random()*200;
+        scene.add(star);
+        stars.push(star);
+      }
+      camera.position.z = 5;
+
+      function animate(){
+        requestAnimationFrame(animate);
+        stars.forEach(star => {
+          star.position.z += 0.2;
+          if (star.position.z > 5) star.position.z = -200;
+        });
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', ()=>{
+        camera.aspect = window.innerWidth/window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+    };
+  </script>
+</body>
+</html>
